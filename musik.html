@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Musik – Flowery T</title>
+  <meta name="description" content="Videos und Songs von Flowery T.">
+  <link rel="icon" href="img/web/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/web/logo-small.webp" alt="Flowery T" width="204" height="140"></a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="band.html">Band</a></li>
+          <li><a href="musik.html" aria-current="page">Musik</a></li>
+          <li><a href="gigs.html">Gigs</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-title">
+      <div class="container">
+        <h1>Musik</h1>
+        <p>Videos und Songs zum Reinhören.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Videos</h2>
+        <!--
+          Neues Video: Block <figure class="card"> kopieren und die VIDEO_ID aus dem
+          YouTube-Link (watch?v=VIDEO_ID) in src eintragen.
+          youtube-nocookie.com = datenschutzfreundlichere Variante von YouTube.
+        -->
+        <div class="grid video-grid">
+          <figure class="card">
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/yJfFl1-dOa8"
+                    title="Inspector Spoony – Flowery T" loading="lazy"
+                    allow="accelerometer; encrypted-media; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <figcaption>
+              <h3>Inspector Spoony</h3>
+              <a href="https://www.youtube.com/watch?v=yJfFl1-dOa8" rel="noopener" target="_blank">Auf YouTube ansehen</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Audio</h2>
+        <!--
+          MP3s liegen in audio/. Leerzeichen im Dateinamen im src als %20 schreiben.
+          preload="none": Songs werden erst beim Klick auf Play geladen.
+        -->
+        <ul class="track-list">
+          <li class="card track">
+            <h3>Don Noob</h3>
+            <audio controls preload="none" src="audio/Don%20Noob.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>Flying Heist</h3>
+            <audio controls preload="none" src="audio/Flying%20Heist.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>Inspector Spoony</h3>
+            <audio controls preload="none" src="audio/Inspector%20Spoony.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>Jon Bowie</h3>
+            <audio controls preload="none" src="audio/Jon%20Bowie.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>No Chance</h3>
+            <audio controls preload="none" src="audio/No%20Chance.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>Sonntagsei</h3>
+            <audio controls preload="none" src="audio/Sonntagsei.mp3"></audio>
+          </li>
+          <li class="card track">
+            <h3>Song 5</h3>
+            <p class="track__version">Slow</p>
+            <audio controls preload="none" src="audio/Song%205%20-%20slow.mp3"></audio>
+            <p class="track__version">Fast</p>
+            <audio controls preload="none" src="audio/Song%205%20-%20fast.mp3"></audio>
+          </li>
+        </ul>
+        <p class="muted" style="margin-top:1.5rem">
+          Auch zu finden auf: <a href="https://soundcloud.com/flowery-t" rel="noopener" target="_blank">SoundCloud</a> · <a href="https://www.youtube.com/@Flowery_T_Band" rel="noopener" target="_blank">YouTube</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Flowery T</p>
+      <ul>
+        <li><a href="https://www.instagram.com/flowery.t.band/" rel="noopener" target="_blank">Instagram</a></li>
+        <li><a href="https://soundcloud.com/flowery-t" rel="noopener" target="_blank">SoundCloud</a></li>
+        <li><a href="https://www.youtube.com/@Flowery_T_Band" rel="noopener" target="_blank">YouTube</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum &amp; Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

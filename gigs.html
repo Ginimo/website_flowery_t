@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gigs – Flowery T</title>
+  <meta name="description" content="Kommende Konzerte von Flowery T.">
+  <link rel="icon" href="img/web/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/web/logo-small.webp" alt="Flowery T" width="204" height="140"></a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="band.html">Band</a></li>
+          <li><a href="musik.html">Musik</a></li>
+          <li><a href="gigs.html" aria-current="page">Gigs</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-title">
+      <div class="container">
+        <h1>Gigs</h1>
+        <p>Hier spielen wir als Nächstes. Wir freuen uns auf euch!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Kommende Konzerte</h2>
+        <!-- Pro Konzert eine Zeile <tr>. Vergangene Gigs in die Tabelle unten verschieben. -->
+        <table class="gig-table">
+          <thead>
+            <tr><th scope="col">Datum</th><th scope="col">Anlass</th><th scope="col">Ort</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="2026-12-12">12.12.2026</time></td>
+              <td>Privater Gig (Geburtstag)</td>
+              <td>Oberwil-Lieli</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Vergangene Gigs</h2>
+        <table class="gig-table gig-table--past">
+          <thead>
+            <tr><th scope="col">Datum</th><th scope="col">Anlass</th><th scope="col">Ort</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="2026-09-26">26.09.2026</time></td>
+              <td>Privater Gig (Geburtstag)</td>
+              <td>Au</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Galerie als Slider: reines CSS (scroll-snap), wischbar auf dem Handy. -->
+    <section class="section section--alt" aria-labelledby="galerie-titel">
+      <div class="container">
+        <h2 id="galerie-titel">Live-Fotos</h2>
+        <!--
+          Neues Foto: Web-Version (ca. 1600 px breit, .webp) nach img/web/ legen und hier
+          eine weitere <figure id="foto-N"> anlegen + passenden Punkt in .slider-dots ergänzen.
+        -->
+        <div class="slider">
+          <figure id="foto-1"><img src="img/web/band_01.webp" alt="Flowery T live auf einer Terrasse unter Weinlaub" loading="lazy" width="1600" height="1200"><figcaption>Live unter freiem Himmel</figcaption></figure>
+        </div>
+        <nav class="slider-dots" aria-label="Foto auswählen">
+          <a href="#foto-1" aria-label="Foto 1"></a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Flowery T</p>
+      <ul>
+        <li><a href="https://www.instagram.com/flowery.t.band/" rel="noopener" target="_blank">Instagram</a></li>
+        <li><a href="https://soundcloud.com/flowery-t" rel="noopener" target="_blank">SoundCloud</a></li>
+        <li><a href="https://www.youtube.com/@Flowery_T_Band" rel="noopener" target="_blank">YouTube</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum &amp; Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
