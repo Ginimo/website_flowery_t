@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie – Flowery T.</title>
+  <meta name="description" content="Fotos von Flowery T. auf und hinter der Bühne.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111111">
+  <link rel="alternate" hreflang="de" href="../de/gallery.html">
+  <!-- TODO Add English language -->
+  <!-- <link rel="alternate" hreflang="en" href="../en/gallery.html"> -->
+  <link rel="alternate" hreflang="x-default" href="../de/gallery.html">
+  <link rel="icon" href="../assets/img/flower-yellow.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/shrikhand-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <meta property="og:title" content="Galerie – Flowery T.">
+  <meta property="og:description" content="Fotos von Flowery T. auf und hinter der Bühne.">
+  <meta property="og:image" content="../assets/img/logo.webp">
+</head>
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="../assets/img/logo-sm.webp" width="420" height="293" alt="Flowery T. – zur Startseite">
+      </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a class="accent-pink" href="index.html">Start</a></li>
+          <li><a class="accent-yellow" href="band.html">Band</a></li>
+          <li><a class="accent-purple" href="music.html">Musik</a></li>
+          <li><a class="accent-teal" href="gigs.html">Gigs</a></li>
+          <li><a class="accent-orange" href="gallery.html" aria-current="page">Galerie</a></li>
+          <li><a class="accent-blue" href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Sprache wählen">
+        <a href="gallery.html" hreflang="de" lang="de" aria-current="true">DE</a>
+        <!-- TODO Add English language -->
+        <!-- <a href="../en/gallery.html" hreflang="en" lang="en">EN</a> -->
+      </nav>
+    </div>
+    <div class="checker" aria-hidden="true"></div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <img class="deco" src="../assets/img/flower-orange.svg" alt="" width="64" height="64">
+      <img class="deco" src="../assets/img/flower-purple.svg" alt="" width="64" height="64">
+      <img class="deco" src="../assets/img/flower-yellow.svg" alt="" width="64" height="64">
+      <div class="wrap">
+        <h1>Galerie</h1>
+        <p>Schnappschüsse von der Bühne, aus dem Proberaum und von allem dazwischen.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Fotos">
+      <div class="wrap">
+        <ul class="gallery">
+          <li id="g-1">
+            <a class="accent-pink" href="#photo-1"><img src="../assets/img/gallery/band-01.webp" width="1200" height="800" alt="Die ganze Band auf der Bühne" loading="lazy"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Lightbox: pure CSS via :target. One block per photo, with the matching number. -->
+    <div class="lightbox" id="photo-1" role="dialog" aria-label="Foto 1 von 9">
+      <a class="btn close" href="#g-1">Schliessen ✕</a>
+      <figure>
+        <img src="../assets/img/gallery/band-01.webp" width="1200" height="800" alt="Die ganze Band auf der Bühne" loading="lazy">
+        <figcaption>Die ganze Band auf der Bühne</figcaption>
+      </figure>
+<!--      <div class="lightbox-nav">-->
+<!--        <a class="btn" href="#photo-0">← Zurück</a>-->
+<!--        <a class="btn" href="#photo-2">Weiter →</a>-->
+<!--      </div>-->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="checker" aria-hidden="true"></div>
+    <div class="wrap footer-inner">
+      <small>© 2026 Flowery T.</small>
+      <ul>
+        <li><a href="contact.html#imprint">Impressum</a></li>
+        <li><a href="https://www.instagram.com/flowery.t.band/" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@Flowery_T_Band" rel="noopener">YouTube</a></li>
+        <li><a href="https://soundcloud.com/flowery-t/" rel="noopener">SoundCloud</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
